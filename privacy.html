@@ -55,11 +55,11 @@
 
   <h3>2. 購買與訂閱資料（由 Apple 與 RevenueCat 處理）</h3>
   <p>你購買<strong>自動續訂訂閱</strong>（淨心結界、各考試合格御守或滿願御守）時，交易由 <strong>Apple App Store</strong> 處理；我們透過 <strong>RevenueCat</strong>（訂閱管理服務）來確認與還原你的購買權利。</p>
-  <p><strong>與 RevenueCat 的連線不只發生在購買時</strong>：<strong>每次開啟 App 或回到前景</strong>，即使你從未購買，App 也會向 RevenueCat 查詢目前的訂閱權利並取得商品價格。在這些連線中，RevenueCat 可能會接收：</p>
+  <p><strong>與 RevenueCat 的連線不只發生在購買時</strong>：<strong>開啟 App 或回到前景時</strong>（本機暫存的訂閱狀態過期才會連線），即使你從未購買，App 也會向 RevenueCat 查詢目前的訂閱權利；開啟付費頁面時另會取得商品價格。在這些連線中，RevenueCat 可能會接收：</p>
   <ul>
     <li>一組由系統產生的<strong>匿名 App 使用者識別碼</strong>（非你的姓名或 Apple ID）</li>
     <li><strong>供應商識別碼（IDFV）</strong>：iOS 提供給同一開發者之 App 的裝置識別碼。它<strong>不是</strong>廣告識別碼（IDFA），本 App 也不會要求 RevenueCat 蒐集廣告識別碼</li>
-    <li>你在「App 追蹤透明度」（ATT）詢問中的<strong>選擇狀態</strong>（同意、拒絕或尚未回應），不含廣告識別碼本身</li>
+    <li>本裝置的「App 追蹤透明度」（ATT）<strong>授權狀態</strong>（同意、拒絕、尚未回應，或因裝置設定而受限制），不含廣告識別碼本身</li>
     <li>購買項目、收據與訂閱狀態</li>
     <li>裝置型號、作業系統版本、App 版本、裝置的偏好語言、App Store 國家／地區，以及連線時的 IP 位址</li>
   </ul>
